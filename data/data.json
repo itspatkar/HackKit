@@ -215,6 +215,23 @@
     ]
   },
   {
+    "name": "APKEditor",
+    "url": "https://github.com/REAndroid/APKEditor",
+    "source": "https://github.com/REAndroid/APKEditor",
+    "description": "Powerful Android APK resource editor to decompile, build, merge, refactor, protect, and analyze apps.",
+    "techniques": [
+      "malware_analysis",
+      "reverse_engineering"
+    ],
+    "categories": [
+      "APK_analyzer",
+      "SAST"
+    ],
+    "targets": [
+      "android"
+    ]
+  },
+  {
     "name": "Apktool",
     "url": "https://apktool.org/",
     "source": "https://github.com/iBotPeaches/Apktool",
@@ -1162,6 +1179,21 @@
     "targets": [
       "android",
       "hardware"
+    ]
+  },
+  {
+    "name": "eCapture",
+    "url": "https://ecapture.cc/",
+    "source": "https://github.com/gojue/ecapture",
+    "description": "Capture SSL/TLS text content without a CA certificate using eBPF.",
+    "techniques": [
+      "exploitation"
+    ],
+    "categories": [
+      "DAST"
+    ],
+    "targets": [
+      "android"
     ]
   },
   {
@@ -3260,6 +3292,19 @@
     "targets": []
   },
   {
+    "name": "Payload Dumper",
+    "url": "https://github.com/ssut/payload-dumper-go",
+    "source": "https://github.com/ssut/payload-dumper-go",
+    "description": "An android OTA payload dumper written in Go.",
+    "techniques": [
+      "reverse_engineering"
+    ],
+    "categories": [],
+    "targets": [
+      "android"
+    ]
+  },
+  {
     "name": "ParamSpider",
     "url": "https://github.com/devanshbatham/ParamSpider",
     "source": "https://github.com/devanshbatham/ParamSpider",
@@ -3708,6 +3753,19 @@
     ],
     "targets": [
       "network"
+    ]
+  },
+  {
+    "name": "Scrcpy",
+    "url": "https://github.com/Genymobile/scrcpy",
+    "source": "https://github.com/Genymobile/scrcpy",
+    "description": "Mirrors Android devices (video and audio) connected via USB or TCP/IP and allows control using the computer's keyboard and mouse.",
+    "techniques": [
+      "misc"
+    ],
+    "categories": [],
+    "targets": [
+      "android"
     ]
   },
   {
