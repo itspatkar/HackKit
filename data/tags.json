@@ -5,8 +5,8 @@
     "enumeration",
     "exploitation",
     "malware_analysis",
-    "misc",
     "networking",
+    "other",
     "password_attack",
     "post_exploitation",
     "reconnaissance",
@@ -17,7 +17,6 @@
   ],
   "categories": [
     "active_directory",
-    "ADB",
     "APK_analyzer",
     "auth",
     "DAST",

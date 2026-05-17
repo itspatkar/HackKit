@@ -46,6 +46,21 @@
     ]
   },
   {
+    "name": "Adminer",
+    "url": "https://www.adminer.org/",
+    "source": "https://github.com/vrana/adminer/",
+    "description": "Adminer is a full-featured database management tool written in PHP. It consists of a single file ready to deploy to the target server. Adminer Editor offers data manipulation for end-users.",
+    "techniques": [
+      "enumeration",
+      "exploitation"
+    ],
+    "categories": [],
+    "targets": [
+      "database",
+      "web"
+    ]
+  },
+  {
     "name": "AdminPBuster",
     "url": "https://github.com/blackhatethicalhacking/AdminPBuster",
     "source": "https://github.com/blackhatethicalhacking/AdminPBuster",
@@ -255,9 +270,10 @@
     "url": "https://muntashirakon.github.io/AppManager/",
     "source": "https://github.com/MuntashirAkon/AppManager",
     "description": "A full-featured package manager and viewer for Android.",
-    "techniques": [],
+    "techniques": [
+      "other"
+    ],
     "categories": [
-      "ADB"
     ],
     "targets": [
       "android"
@@ -944,7 +960,9 @@
     "url": "https://sqlitebrowser.org/",
     "source": "https://github.com/sqlitebrowser/sqlitebrowser",
     "description": "DB Browser for SQLite (DB4S) is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.",
-    "techniques": [],
+    "techniques": [
+      "other"
+    ],
     "categories": [],
     "targets": [
       "database"
@@ -1585,7 +1603,6 @@
       "post_exploitation"
     ],
     "categories": [
-      "ADB",
       "hijacking",
       "RAT",
       "remote_code_execution"
@@ -1627,9 +1644,10 @@
     "url": "https://github.com/Genymobile/gnirehtet",
     "source": "https://github.com/Genymobile/gnirehtet",
     "description": "Gnirehtet provides reverse tethering over adb for Android: it allows devices to use the internet connection of the computer they are plugged on. It does not require any root access.",
-    "techniques": [],
+    "techniques": [
+      "other"
+    ],
     "categories": [
-      "ADB"
     ],
     "targets": [
       "android"
@@ -1726,7 +1744,7 @@
     "source": "https://grabify.link/",
     "description": "Grabify IP Logger and URL Shortener helps you find and track the IP address of anyone, providing advanced and detailed statistical data and metadata for every click on your links.",
     "techniques": [
-      "misc",
+      "other",
       "social_engineering"
     ],
     "categories": [
@@ -2224,7 +2242,9 @@
     "url": "https://information.rapid7.com/iotseeker.html",
     "source": "https://github.com/rapid7/IoTSeeker",
     "description": "IoTSeeker allows you to scan your network for known device types that could be used as unwilling participants in a distributed denial-of-service attack.  With this tool you can find out if you have connected “Things” which are using the default factory password leaving them potentially vulnerable to a hostile takeover. Use the local scan output to determine which devices need to be secured or removed from the network.",
-    "techniques": [],
+    "techniques": [
+      "password_attack"
+    ],
     "categories": [
       "network_scanner",
       "OSINT"
@@ -2297,6 +2317,23 @@
     ]
   },
   {
+    "name": "JSHawk",
+    "url": "https://github.com/Mah3Sec/JSHawk",
+    "source": "https://github.com/Mah3Sec/JSHawk",
+    "description": "JSHawk is an advanced JavaScript security scanner for bug bounty hunters and penetration testers. It downloads and deeply analyzes JavaScript files from a target domain, detecting exposed credentials, API keys, database URLs, private keys, and other secrets using 60+ patterns with Shannon entropy scoring to eliminate false positives.",
+    "techniques": [
+      "reconnaissance"
+    ],
+    "categories": [
+      "content_discovery",
+      "javascript",
+      "OSINT"
+    ],
+    "targets": [
+      "web"
+    ]
+  },
+  {
     "name": "JShunter",
     "url": "https://github.com/cc1a2b/jshunter",
     "source": "https://github.com/cc1a2b/jshunter",
@@ -2319,10 +2356,27 @@
     "source": "https://github.com/circlecell/jsonlint",
     "description": "JSONLint is your go-to online solution for JSON validation, formatting, and conversion. Whether you're debugging APIs, transforming data formats, or generating code from JSON schemas, JSONLint has you covered.",
     "techniques": [
-      "misc"
+      "other"
     ],
     "categories": [
       "web_app"
+    ],
+    "targets": [
+      "web"
+    ]
+  },
+  {
+    "name": "JSRip",
+    "url": "https://github.com/mouteee/jsrip",
+    "source": "https://github.com/mouteee/jsrip",
+    "description": "JavaScript ripper for the offensive web. Crawls targets, rips their JS, and tears it apart looking for secrets, endpoints, and things developers forgot to hide.",
+    "techniques": [
+      "reconnaissance"
+    ],
+    "categories": [
+      "content_discovery",
+      "javascript",
+      "OSINT"
     ],
     "targets": [
       "web"
@@ -2434,7 +2488,9 @@
     "url": "https://kismac-ng.org/",
     "source": "https://github.com/IGRSoft/KisMac2",
     "description": "KisMAC is a free, open-source WiFi scanner for Mac that helps you gather key information about nearby networks. It can detect SSIDs, display connected clients, map WiFi coverage, and more.",
-    "techniques": [],
+    "techniques": [
+      "reconnaissance"
+    ],
     "categories": [
       "network_scanner"
     ],
@@ -2481,8 +2537,10 @@
     "name": "Kube-bench",
     "url": "https://github.com/aquasecurity/kube-bench",
     "source": "https://github.com/aquasecurity/kube-bench",
-    "description": "Kube-hunter hunts for security weaknesses in Kubernetes clusters. The tool was developed to increase awareness and visibility for security issues in Kubernetes environments.",
-    "techniques": [],
+    "description": "kube-bench is a tool that checks whether Kubernetes is deployed securely by running the checks documented in the CIS Kubernetes Benchmark.",
+    "techniques": [
+      "vulnerability_assessment"
+    ],
     "categories": [
       "misconfigs"
     ],
@@ -2495,7 +2553,9 @@
     "url": "https://github.com/aquasecurity/kube-hunter",
     "source": "https://github.com/aquasecurity/kube-hunter",
     "description": "Kube-hunter hunts for security weaknesses in Kubernetes clusters. The tool was developed to increase awareness and visibility for security issues in Kubernetes environments.",
-    "techniques": [],
+    "techniques": [
+      "vulnerability_assessment"
+    ],
     "categories": [
       "misconfigs"
     ],
@@ -2508,7 +2568,9 @@
     "url": "https://kubescape.io/",
     "source": "https://github.com/kubescape/kubescape",
     "description": "Kubescape is an open-source Kubernetes security platform that provides comprehensive security coverage, from left to right across the entire development and deployment lifecycle. It offers hardening, posture management, and runtime security capabilities to ensure robust protection for Kubernetes environments. It saves Kubernetes users and admins precious time, effort, and resources.",
-    "techniques": [],
+    "techniques": [
+      "vulnerability_assessment"
+    ],
     "categories": [
       "misconfigs"
     ],
@@ -2605,7 +2667,9 @@
     "url": "https://github.com/lakinduakash/linux-wifi-hotspot",
     "source": "https://github.com/lakinduakash/linux-wifi-hotspot",
     "description": "Feature-rich wifi hotspot creator for Linux which provides both GUI and command-line interface. It is also able to create a hotspot using the same wifi card which is connected to an AP already ( Similar to Windows 10). The tool supports 2.4GHz and 5GHz frequencies, works with WPA3 encryption, and includes a bridged mode for sharing an existing connection. It also offers MAC filtering support and an easy setup with a single script.",
-    "techniques": [],
+    "techniques": [
+      "other"
+    ],
     "categories": [
       "rogue_access_point"
     ],
@@ -3065,7 +3129,9 @@
     "url": "https://github.com/shifa123/NoRLCheck",
     "source": "https://github.com/shifa123/NoRLCheck",
     "description": "This is the python script to check for the website if vulnerable to No RL.",
-    "techniques": [],
+    "techniques": [
+      "vulnerability_assessment"
+    ],
     "categories": [
       "rate_limit"
     ],
@@ -3416,7 +3482,6 @@
       "exploitation"
     ],
     "categories": [
-      "ADB",
       "hijacking",
       "remote_code_execution"
     ],
@@ -3477,7 +3542,9 @@
     "url": "https://prowler.com/",
     "source": "https://github.com/prowler-cloud/prowler",
     "description": "Prowler is an Open Cloud Security tool for AWS, Azure, GCP and Kubernetes. It helps for continuos monitoring, security assessments and audits, incident response, compliance, hardening and forensics readiness. Includes CIS, NIST 800, NIST CSF, CISA, FedRAMP, PCI-DSS, GDPR, HIPAA, FFIEC, SOC2, GXP, Well-Architected Security, ENS and more.",
-    "techniques": [],
+    "techniques": [
+      "vulnerability_assessment"
+    ],
     "categories": [],
     "targets": [
       "cloud"
@@ -3761,7 +3828,7 @@
     "source": "https://github.com/Genymobile/scrcpy",
     "description": "Mirrors Android devices (video and audio) connected via USB or TCP/IP and allows control using the computer's keyboard and mouse.",
     "techniques": [
-      "misc"
+      "other"
     ],
     "categories": [],
     "targets": [
@@ -3838,6 +3905,23 @@
       "OSINT"
     ],
     "targets": [
+      "web"
+    ]
+  },
+  {
+    "name": "SecScanner",
+    "url": "https://secscanner.app/",
+    "source": "https://secscanner.app/",
+    "description": "Comprehensive security scanners for testing specific aspects of a website’s security configuration across TLS, headers, content, DNS, and more.",
+    "techniques": [
+      "vulnerability_assessment"
+    ],
+    "categories": [
+      "header_analysis",
+      "web_app"
+    ],
+    "targets": [
+      "network",
       "web"
     ]
   },
@@ -4418,7 +4502,6 @@
       "exploitation"
     ],
     "categories": [
-      "ADB",
       "privilege_escalation"
     ],
     "targets": [
@@ -4763,7 +4846,9 @@
     "url": "https://github.com/t6x/reaver-wps-fork-t6x",
     "source": "https://github.com/tiagob0b/Reaver-WPS",
     "description": "Wash is a tool used alongside Reaver to identify WPS-enabled networks before launching an attack. It helps filter out networks that are vulnerable to WPS brute-force attacks by scanning nearby Wi-Fi networks and checking if WPS is enabled. Additionally, Wash determines whether a router is protected against Reaver attacks (e.g., if WPS Lockout is enabled) and displays essential details such as BSSID (MAC address), channel, and WPS version.",
-    "techniques": [],
+    "techniques": [
+      "reconnaissance"
+    ],
     "categories": [
       "network_scanner"
     ],
@@ -4772,6 +4857,24 @@
       "IoT",
       "network",
       "wireless"
+    ]
+  },
+  {
+    "name": "WatchStack.io",
+    "url": "https://watchstack.io/",
+    "source": "https://watchstack.io/",
+    "description": "A global vulnerability intelligence platform providing high-fidelity CVE tracking, exploit availability insights, and automated monitoring for security operations.",
+    "techniques": [
+      "digital_forensics",
+      "reconnaissance",
+      "social_engineering"
+    ],
+    "categories": [
+      "OSINT",
+      "search_engine"
+    ],
+    "targets": [
+      "web"
     ]
   },
   {
@@ -4828,11 +4931,29 @@
     ]
   },
   {
+    "name": "Webshell Bypass",
+    "url": "https://github.com/sagsooz/Webshell-bypass",
+    "source": "https://github.com/sagsooz/Webshell-bypass",
+    "description": "A collection of advanced PHP and ASPX web shells designed to bypass security measures.",
+    "techniques": [
+      "exploitation"
+    ],
+    "categories": [
+      "bypass",
+      "reverse_shell"
+    ],
+    "targets": [
+      "web"
+    ]
+  },
+  {
     "name": "WepCrackGUI",
     "url": "https://wepcrackgui.sourceforge.io/",
     "source": "https://sourceforge.net/projects/wepcrackgui/",
     "description": "A GUI for Aircrack-ng that can crack WEP and WPA networks, automatically scans for available networks, and provides fake authentication and injection support. Features include cracking WEP and WPA-encrypted networks, support for multiple interfaces, network scanning, packet injection, fake authentication (Open and Shared key), MAC address changer, hidden SSID discovery, WEP dictionary attack, and a password generator for WPA networks.",
-    "techniques": [],
+    "techniques": [
+      "exploitation"
+    ],
     "categories": [
       "rogue_access_point"
     ],
@@ -4881,7 +5002,9 @@
     "url": "https://github.com/kimocoder/wifite2",
     "source": "https://github.com/derv82/wifite2",
     "description": "Wifite is an automated wireless auditing tool designed for penetration testers and ethical hackers, using all known methods to retrieve the password of a wireless access point. It simplifies WiFi attacks by automating WEP, WPA, and WPA2 cracking techniques with tools like Aircrack-ng, Reaver, and Bully. Wifite is particularly useful for Evil Twin, WPS, and handshake capture attacks with minimal user input. Key features include automated WiFi hacking, WPA/WPA2 handshake capture, WPS attacks, Evil Twin attack, deauthentication attack, hidden SSID discovery, WiFi signal jammer, block specific accesspoints or multiple, and support for multiple WiFi adapters.",
-    "techniques": [],
+    "techniques": [
+      "exploitation"
+    ],
     "categories": [
       "credential_dumping",
       "network_scanner",
