@@ -1,12 +1,12 @@
-# 🛡️ The Hacker Kit
+# 🛡️ CyberStation
 
 > A curated collection of cybersecurity tools — organized, searchable, and ready for security research, penetration testing, and learning.
 
-[🚀 Live Demo](https://patkarmandar.github.io/HackKit) • [Features](#features) • [Quick Start](#quick-start)
+[🚀 Live Demo](https://patkarmandar.github.io/CyberStation) • [Features](#features) • [Quick Start](#quick-start)
 
 ## About
 
-The Hacker Kit is a comprehensive directory of cybersecurity tools, categorized by technique, category, and target. Fast search, smart filters, and zero dependencies.
+The CyberStation is a comprehensive directory of cybersecurity tools, categorized by technique, category, and target. Fast search, smart filters, and zero dependencies.
 
 ## Features
 
@@ -30,8 +30,8 @@ Pure vanilla JavaScript • No frameworks • No dependencies
 
 ```bash
 # Clone
-git clone https://github.com/patkarmandar/HackKit.git
-cd HackKit
+git clone https://github.com/patkarmandar/CyberStation.git
+cd CyberStation
 
 # Run local server
 python -m http.server 8000
@@ -45,7 +45,7 @@ open http://localhost:8000
 ## Project Structure
 
 ```
-HackKit/
+CyberStation/
 ├── index.html
 ├── css/style.min.css
 ├── js/script.min.js
@@ -98,9 +98,9 @@ Contributions are welcome! Here's how:
 
 Found a bug? Want a feature? Have a tool to add?
 
-- 🐛 [Report Bug](https://github.com/patkarmandar/HackKit/issues)
-- 💡 [Request Feature](https://github.com/patkarmandar/HackKit/issues)
-- 🔧 [Submit Tool](https://github.com/patkarmandar/HackKit/pulls)
+- 🐛 [Report Bug](https://github.com/patkarmandar/CyberStation/issues)
+- 💡 [Request Feature](https://github.com/patkarmandar/CyberStation/issues)
+- 🔧 [Submit Tool](https://github.com/patkarmandar/CyberStation/pulls)
 
 <p align="center">
   <sub>Made with 🛡️ by <a href="https://github.com/patkarmandar">Mandar</a></sub>
